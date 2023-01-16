@@ -5,10 +5,11 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #62b2ff, #6d9cff);
+  background-color: rgb(17 24 39);
   font-family: "Inter", sans-serif;
 }
 
+/* Navbar Component */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -17,8 +18,10 @@ body {
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .nav-items {
@@ -31,16 +34,25 @@ body {
 }
 
 .nav-link {
+  color: white;
   text-decoration: none;
-  color: #333;
-  font-size: 1.2em;
+  font-size: 16px;
 }
 
+.nav-link:hover {
+  text-underline-offset: 2px;
+  text-decoration: underline;
+}
+
+/* Home Component */
 .hero-text {
   text-align: center;
-  margin: 50px 0;
+  font-size: 24px;
+  color: white;
+  margin: 120px 0;
 }
 
+/* Login and Signup Component */
 .container {
   width: 400px;
   max-width: 480px;
@@ -55,7 +67,7 @@ body {
 .heading {
   font-size: 32px;
   font-weight: 600;
-  color: #202842;
+  color: black;
   margin-bottom: 24px;
 }
 
@@ -73,18 +85,18 @@ label {
 input {
   width: 100%;
   padding: 14px;
-  border: 1px solid #ebebf2;
+  border: 1px solid rgb(229 231 235);
   background-color: transparent;
   border-radius: 8px;
   outline: none;
 }
 
 input::placeholder {
-  color: #242e4c86;
+  color: rgb(107 114 128);
 }
 
 input:focus {
-  border: 1px solid #7985ff;
+  border: 1px solid rgb(107 114 128);
 }
 
 .submit-btn {
@@ -102,4 +114,15 @@ input:focus {
 
 .submit-btn:hover {
   background-image: linear-gradient(to right, #6d9cff, #62b2ff);
+}
+
+.account {
+  margin-top: 16px;
+}
+
+/* Profile Component */
+.profile {
+  color: white;
+  text-align: center;
+  margin: 120px 0;
 }
